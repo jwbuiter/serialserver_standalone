@@ -1,0 +1,11 @@
+[Service]
+WorkingDirectory=/srv/serialserver
+ExecStart=/usr/bin/node server.js
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=notell
+Environment=NODE_ENV=production
+ 
+[Install]
+WantedBy=multi-user.target

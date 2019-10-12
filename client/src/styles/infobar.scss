@@ -1,0 +1,19 @@
+@import "constants";
+
+.infobar {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4fr 4fr 3fr 3fr;
+  height: 100%;
+
+  border-radius: 10px;
+  font-size: 3vh;
+
+  background-color: $primary-color;
+
+  &--item {
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+}

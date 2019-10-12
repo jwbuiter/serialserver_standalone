@@ -1,0 +1,34 @@
+{
+  "name": "serialserver",
+  "version": "1.0.0",
+  "description": " Webserver that hosts all incoming serial data",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "nodemon --ignore configs/current.js --ignore selfLearning/individualData.json server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwbuiter/serialserver.git"
+  },
+  "author": "jwbuiter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwbuiter/serialserver/issues"
+  },
+  "homepage": "https://github.com/jwbuiter/serialserver#readme",
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "express": "^4.16.2",
+    "express-fileupload": "^0.4.0",
+    "express-zip": "^2.0.1",
+    "ftp": "^0.3.10",
+    "ip": "^1.1.5",
+    "node-schedule": "^1.3.0",
+    "onoff": "^2.0.0",
+    "redux": "^4.0.0",
+    "serialport": "^6.0.5",
+    "socket.io": "^2.0.4",
+    "xlsx": "^0.12.10"
+  }
+}

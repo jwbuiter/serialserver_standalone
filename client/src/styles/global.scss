@@ -1,0 +1,89 @@
+@import "constants";
+body {
+  margin: 0;
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(to right, rgb(177, 233, 255), white);
+}
+
+button {
+  border: 0;
+  &:focus {
+    outline: 0;
+  }
+}
+
+form {
+  width: 30em;
+  line-height: 1.6;
+  input {
+    float: right;
+  }
+
+  select {
+    float: right;
+  }
+}
+
+.center {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.center-horizontal {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, 0%);
+}
+
+.center-vertical {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modalContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  background: #fff;
+  max-height: 90vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
+
+.configuration {
+  &--emphasis {
+    padding: 0.5em;
+    background-color: $tertiary-color;
+  }
+  &--struct {
+    border: 1px solid black;
+  }
+  &--button {
+    float: left;
+  }
+}

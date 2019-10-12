@@ -1,0 +1,19 @@
+@import "buttonList";
+
+.buttonList--list--indicator {
+  &--inputOn {
+    background-color: yellow;
+  }
+
+  &--inputOff {
+    background-color: #3fd35d;
+  }
+
+  &--inputForcedOn {
+    background-color: #cc66ff;
+  }
+
+  &--inputForcedOff {
+    background-color: #eebbee;
+  }
+}

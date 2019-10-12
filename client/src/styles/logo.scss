@@ -1,0 +1,17 @@
+.logo {
+  position: relative;
+
+  height: 100%;
+
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+  background-color: white;
+  cursor: pointer;
+
+  img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,46 @@
+@import "constants";
+
+.selfLearning {
+  position: relative;
+
+  grid-column: span 2;
+
+  height: 100%;
+
+  box-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.5);
+  background-color: white;
+  border-radius: 2vh;
+
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  &--cell {
+    position: relative;
+  }
+
+  &--inProgress {
+    background-color: yellow;
+  }
+
+  &--success {
+    background-color: #3fd35d;
+  }
+
+  &--warning {
+    background-color: #ffc000;
+  }
+
+  &--modal {
+    &--title {
+      width: 100%;
+      text-align: center;
+      background-color: $tertiary-color;
+      font-weight: bold;
+    }
+    &--buttons {
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import "constants";
+
+#page-wrap {
+  padding-top: 2vh;
+}
+
+.main {
+  margin: 0vh 2vh;
+  height: 96vh;
+
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 3fr;
+  grid-template-areas:
+    "outputs info info logo"
+    "outputs coms inputs inputs"
+    "table table table table";
+
+  grid-gap: 2vh;
+
+  &--nooutputs {
+    grid-template-columns: 0 5fr 1fr 1fr;
+  }
+
+  &--noinputs {
+    grid-template-areas:
+      "outputs info info logo"
+      "outputs coms coms coms"
+      "table table table table";
+  }
+
+  &--notable {
+    grid-template-rows: 1fr 5fr;
+  }
+
+  &--logModal {
+    &--title {
+      width: 100%;
+      text-align: center;
+      background-color: $tertiary-color;
+    }
+  }
+}
+
+.info {
+  grid-area: info;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.coms {
+  grid-area: coms;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  grid-gap: 2vh;
+
+  &--noselfLearning {
+    grid-template-rows: 1fr;
+  }
+  &--oneCom {
+    grid-template-columns: 1fr;
+  }
+}
+
+.table {
+  grid-area: table;
+}
+
+.outputs {
+  grid-area: outputs;
+}
+
+.inputs {
+  grid-area: inputs;
+}

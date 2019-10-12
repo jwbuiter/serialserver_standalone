@@ -1,0 +1,52 @@
+@import "constants";
+
+$inputsize: 80%;
+
+.tableCell {
+  position: relative;
+
+  border-radius: 20px;
+
+  color: white;
+
+  background-color: $secondary-color;
+
+  &--notFound {
+    background-color: red;
+  }
+
+  &--title {
+    position: relative;
+    background-color: $primary-color;
+    height: 40%;
+    border-radius: 20px 20px 0 0;
+    font-size: 4vh;
+  }
+
+  &--content {
+    position: relative;
+    height: 60%;
+    font-size: 5vh;
+    color: black;
+    border-radius: 0 0 20px 20px;
+
+    &--input {
+      border: none;
+      font-size: $inputsize;
+      text-align: center;
+
+      &--numeric,
+      &--text,
+      &--select {
+        width: 65%;
+      }
+    }
+
+    button {
+      background-color: $tertiary-color;
+      font-size: $inputsize;
+      width: 15%;
+      padding: 1px 0;
+    }
+  }
+}

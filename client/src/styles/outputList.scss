@@ -1,0 +1,23 @@
+@import "buttonList";
+
+.buttonList--list--indicator {
+  &--outputOn {
+    background-color: yellow;
+  }
+
+  &--outputOff {
+    background-color: #3fd35d;
+  }
+
+  &--outputForcedOn {
+    background-color: #cc66ff;
+  }
+
+  &--outputForcedOff {
+    background-color: #eebbee;
+  }
+
+  &--outputExecute {
+    background-color: #ffc000;
+  }
+}

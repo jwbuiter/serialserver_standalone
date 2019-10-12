@@ -1,0 +1,8 @@
+config.static.json
+seriallog*.txt
+data/*
+configs/*
+logo/*
+!data/.gitkeep
+!configs/template.json
+!logo/.gitkeep

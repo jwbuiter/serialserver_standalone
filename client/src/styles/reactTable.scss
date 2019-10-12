@@ -1,0 +1,18 @@
+@import "constants";
+
+.reactTable {
+  &--header {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr;
+    &--child {
+      &:nth-child(2) {
+        background-color: $tertiary-color;
+      }
+    }
+  }
+}
+
+.ReactTable .rt-thead .rt-th.-cursor-pointer {
+  padding: 0;
+}
