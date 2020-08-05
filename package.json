@@ -20,7 +20,7 @@
   "dependencies": {
     "dateformat": "^3.0.3",
     "express": "^4.16.2",
-    "express-fileupload": "^0.4.0",
+    "express-fileupload": "^1.1.9",
     "express-zip": "^2.0.1",
     "ftp": "^0.3.10",
     "ip": "^1.1.5",
